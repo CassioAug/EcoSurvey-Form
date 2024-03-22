@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form Project</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google font: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Eco-Friendly Lifestyle Survey</h1>
+    <p id="description">Your insights matter in shaping a greener future. Your participation is a valuable step toward
+        sustainability. Thank you for making a difference!</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <legend>Personal information</legend>
+            <label id="name-label">Name: <input id="name" type="text" required placeholder="Full name"></label>
+            <label id="email-label">Email: <input id="email" type="email" required placeholder="example@ex.com"></label>
+            <label id="number-label">Age: <input id="number" type="number" min="1" max="999" required
+                    placeholder="18"></label>
+            <label id="ocupation-label">Ocupation: <select id="ocupation-dropdown">
+                    <option>Student</option>
+                    <option>Professional</option>
+                    <option>Retired</option>
+                    <option>Other</option>
+                </select></label>
+        </fieldset>
+        <fieldset>
+            <legend>Lifestyle habits</legend>
+            <label for="dropdown">
+                <p>1. What is your primary mode of transportation?</p>
+                <select id="dropdown">
+                    <option>Bike</option>
+                    <option>Car</option>
+                    <option>Public Transport</option>
+                    <option>Walking</option>
+                </select>
+            </label>
+            <p>2. Do you make any effort to save electricity?</p>
+            <label for="2-yes"><input name="radio1" type="radio" id="2-yes" value="2-yes" checked> Yes</label>
+            <label for="2-no"><input name="radio1" type="radio" id="2-no" value="2-no"> No</label>
+            <label for="2-sometimes"><input name="radio1" type="radio" id="2-sometimes" value="2-sometimes">
+                Sometimes</label>
+            <p>3. Do you regularly recycle?</p>
+            <label for="3-yes"><input name="radio2" type="radio" id="3-yes" value="3-yes" checked> Yes</label>
+            <label for="3-no"><input name="radio2" type="radio" id="3-no" value="3-no"> No</label>
+            <label for="3-sometimes"><input name="radio2" type="radio" id="3-sometimes" value="3-sometimes">
+                Sometimes</label>
+            <p>4. Do you use reusable bags when shopping?</p>
+            <label for="4-yes"><input name="radio3" type="radio" id="4-yes" value="4-yes" checked> Yes</label>
+            <label for="4-no"><input name="radio3" type="radio" id="4-no" value="4-no"> No</label>
+            <label for="4-sometimes"><input name="radio3" type="radio" id="4-sometimes" value="4-sometimes">
+                Sometimes</label>
+            <label for="dropdown2">
+                <p>5. How often do you consume plant-based meals?</p>
+                <select id="dropdown2" name="plant-consumption">
+                    <option value="frequently">Frequently</option>
+                    <option value="occasionaly">Occasionally</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Final thoughts</legend>
+            <label for="dropdown3">
+                <p>6. On a scale of 1-5, how concerned are you about environmental issues? (1 being not concerned and 5
+                    being very concerned)</p>
+            </label>
+            <select id="dropdown3" name="level-concern">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label for="closing-question">
+                <p>7. What is one change you would consider making to lead a more eco-friendly lifestyle?</p>
+                <textarea maxlength="200" id="closing-question" name="closing-question" rows="3"
+                    cols="30">Answer here... (maximum of 200 characters)</textarea>
+            </label>
+        </fieldset>
+        <label for="tos"><input type="checkbox" value="c1" id="tos" name="tos" required> I agree with the <a
+                href="https://www.freecodecamp.org/news/terms-of-service/">terms of service</a></label>
+        <label for="privacy"><input type="checkbox" value="c2" id="privacy" name="privacy" required> I agree with the <a
+                href="https://www.freecodecamp.org/news/privacy-policy/">privacy policy</a></label>
+        <input id="submit" type="submit">
+    </form>
+</body>
+
+</html>
